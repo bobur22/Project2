@@ -1,0 +1,71 @@
+{% load static %}
+    <!-- <nav class="navbar navbar-expand-lg container navbar-dark bg-none">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="heanav border-bottom-0" aria-current="page" href="https://www.instagram.com/"><i class="bi bi-instagram" style="font-size: 24px;"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="heanav font-f-cg" aria-current="page" href="#header" style="font-weight: 600;">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="heanav font-f-cg" aria-current="page" href="#">Мастера</a>
+                </li>
+                <li class="nav-item">
+                    <a class="heanav font-f-cg" aria-current="page" href="#">Косметика</a>
+                </li>
+                <li class="nav-item">
+                    <a class="heanav border-bottom-0" aria-current="page" href="#"><img src="./img/Vectorlogo.svg" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class="heanav font-f-cg" aria-current="page" href="#">Акции</a>
+                </li>
+                <li class="nav-item">
+                    <a class="heanav font-f-cg" aria-current="page" href="#">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="heanav font-f-cg" aria-current="page" href="#">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="heanav border-bottom-0" aria-current="page" href="#"><i class="bi bi-list" style="font-size: 40px;"></i></a>
+                </li>
+            </ul>
+          </div>
+      </nav> -->
+    <nav class="container-lg pt-3">
+        <ul class="nav justify-content-between align-items-center pb-3 border-bottom mx-5">
+            <li class="nav-item">
+                <a class="heanav_1" aria-current="page"  href="https://www.instagram.com/"><i
+                        class="bi bi-instagram" style="font-size: 24px;"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="heanav font-f-cg" aria-current="page" href="{% url "beaty" %}" style="font-weight:">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="heanav font-f-cg" aria-current="page" href="{% url 'master' %}">Мастера</a>
+            </li>
+            <li class="nav-item">
+                <a class="heanav font-f-cg" aria-current="page" href="#section_1">Косметика</a>
+            </li>
+            <li class="nav-item">
+                <a class="" aria-current="page" href="{% url "beaty" %}"><img
+                        src="{% static "main/img/Vectorlogo.svg" %}" alt=""></a>
+            </li>
+            <li class="nav-item">
+                <a class="heanav font-f-cg" aria-current="page" href="#">Цены</a>
+            </li>
+            <li class="nav-item">
+                <a class="heanav font-f-cg" aria-current="page" href="#">Отзывы</a>
+            </li>
+            <li class="nav-item">
+                <a class="heanav font-f-cg" aria-current="page" href="{% url "contacts" %}">Контакты</a>
+            </li>
+            <li class="nav-item">
+                <a class="heanav_1" aria-current="page" href="#"><i class="bi bi-list"
+                                                                                  style="font-size: 40px;"></i></a>
+            </li>
+        </ul>
+    </nav>

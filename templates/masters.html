@@ -1,0 +1,71 @@
+{% extends "layouts/base-1.html" %}
+{% load static %}
+{% block content %}
+
+    <div class="section_1_d" style="background-color: #000000">
+            <div class="sec_1sen text-center">
+                <h1  class=" font-f-g">Наши мастера</h1>
+            </div>
+            <div class="sec_1img container pt-5">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    {% for i in master %}
+                    <div class="col">
+                      <div class="card h-100 bg-dark">
+                        <img src="{{ i.img.url }}" class="card-img-top" alt="...">
+                        <div class="card-body bg-dark">
+                          <h5 class="card-title font-f-g">{{ i.text_n.capitalize }}</h5>
+                            <p class="font-f-cg text-white">{{ i.text.title }}</p>
+                        </div>
+                      </div>
+                    </div>
+                    {% endfor %}
+{#                    <div class="col">#}
+{#                      <div class="card h-100 bg-dark">#}
+{#                        <img src="{% static "main/img/mas_1_2.jpg" %}" class="card-img-top" alt="...">#}
+{#                        <div class="card-body bg-dark">#}
+{#                          <h5 class="card-title font-f-g">Елена Васильевна</h5>#}
+{#                            <p class="font-f-cg text-white">Визажист</p>#}
+{#                        </div>#}
+{#                      </div>#}
+{#                    </div>#}
+{#                    <div class="col">#}
+{#                      <div class="card h-100 bg-dark">#}
+{#                        <img src="{% static "main/img/mas_1_3.jpg" %}" class="card-img-top" alt="...">#}
+{#                        <div class="card-body bg-dark">#}
+{#                          <h5 class="card-title font-f-g">Елена Васильевна</h5>#}
+{#                            <p class="font-f-cg text-white">Визажист</p>#}
+{#                        </div>#}
+{#                      </div>#}
+{#                    </div>#}
+{#                    <div class="col">#}
+{#                      <div class="card h-100 bg-dark">#}
+{#                        <img src="{% static "main/img/mas_1_4.jpg" %}" class="card-img-top" alt="...">#}
+{#                        <div class="card-body bg-dark">#}
+{#                          <h5 class="card-title font-f-g">Елена Васильевна</h5>#}
+{#                            <p class="font-f-cg text-white">Визажист</p>#}
+{#                        </div>#}
+{#                      </div>#}
+{#                    </div>#}
+{#                    <div class="col">#}
+{#                        <div class="card h-100 bg-dark">#}
+{#                          <img src="{% static "main/img/mas_1_5.jpg" %}" class="card-img-top" alt="...">#}
+{#                          <div class="card-body bg-dark">#}
+{#                            <h5 class="card-title font-f-g">Елена Васильевна</h5>#}
+{#                            <p class="font-f-cg text-white">Визажист</p>#}
+{#                        </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="col">#}
+{#                        <div class="card h-100 bg-dark">#}
+{#                          <img src="{% static "main/img/mas_1_6.jpg" %}" class="card-img-top" alt="...">#}
+{#                          <div class="card-body bg-dark">#}
+{#                            <h5 class="card-title font-f-g">Елена Васильевна</h5>#}
+{#                            <p class="font-f-cg text-white">Визажист</p>#}
+{#                        </div>#}
+{#                        </div>#}
+{#                    </div>#}
+                  </div>
+            </div>
+        </div>
+
+{% endblock content %}
